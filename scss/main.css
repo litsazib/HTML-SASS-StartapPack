@@ -57,34 +57,6 @@ textarea {
 /* ==========================================================================
    Roktim custom styles
    ========================================================================== */
-.oc-container {
-  width: 1000px;
-  margin: 0 auto;
-  background-color: #f7f7f7; }
-
-.oc-row {
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid #666; }
-
-.thumb_area {
-  display: flex;
-  flex-direction: row; }
-
-.item:nth-child(odd) {
-  background-color: #FF00FF; }
-
-.item:nth-child(even) {
-  background-color: #ff0; }
-
-.item {
-  text-align: center;
-  padding: 10px 0px;
-  flex-basis: 100px; }
-
-.item:nth-of-type(5) {
-  flex-basis: 300px; }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
