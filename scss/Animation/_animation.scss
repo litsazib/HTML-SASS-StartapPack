@@ -1,0 +1,12 @@
+@keyframes moveImage {
+    from{
+      -moz-flex-direction: row;
+      -webkit-flex-direction: row;
+       flex-direction: row;
+    }
+    to{
+      -moz-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+}

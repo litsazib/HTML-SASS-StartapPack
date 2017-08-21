@@ -57,6 +57,88 @@ textarea {
 /* ==========================================================================
    Roktim custom styles
    ========================================================================== */
+@keyframes moveImage {
+  from {
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row; }
+  to {
+    -moz-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse; } }
+.title {
+  text-align: center;
+  color: #333; }
+
+.oc-container {
+  width: 1000px;
+  margin: 0 auto; }
+
+.oc-row {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.artical {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-animation: mymove 5s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: moveImage 5s infinite; }
+
+.item > img {
+  max-width: 100%; }
+
+.item {
+  flex: 1;
+  padding: 10px;
+  margin: 10px 10px;
+  text-align: center;
+  border: 1px solid #c0c0c0;
+  box-shadow: 5px 4px 7px 0px #c0c0c0; }
+
+.artical1 {
+  display: flex; }
+
+.artical1 > .item:nth-of-type(1) {
+  animation: changeOrder 3s infinite;
+  -webkit-animation: changeOrder 3s infinite;
+  -moz-animation: changeOrder 3s infinite; }
+
+.artical1 > .item:nth-of-type(2) {
+  animation: changeOrder2 3s infinite;
+  -webkit-animation: changeOrder2 3s infinite;
+  -moz-animation: changeOrder2 3s infinite; }
+
+.artical1 > .item:nth-of-type(3) {
+  animation: changeOrder3 3s infinite;
+  -webkit-animation: changeOrder3 3s infinite;
+  -moz-animation: changeOrder3 3s infinite; }
+
+.artical1 > .item:nth-of-type(4) {
+  animation: changeOrder4 3s infinite;
+  -webkit-animation: changeOrder4 3s infinite;
+  -moz-animation: changeOrder4 3s infinite; }
+
+@keyframes changeOrder {
+  from {
+    order: 1; }
+  to {
+    order: 2; } }
+@keyframes changeOrder2 {
+  from {
+    order: 2; }
+  to {
+    order: 1; } }
+@keyframes changeOrder3 {
+  from {
+    order: 3; }
+  to {
+    order: 4; } }
+@keyframes changeOrder4 {
+  from {
+    order: 4; }
+  to {
+    order: 3; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
