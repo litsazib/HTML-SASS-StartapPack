@@ -1,0 +1,129 @@
+.button {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    background-color: #e34949;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    padding: 4px 40px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin: 0 0 1rem;
+    color: #fefefe;
+}
+
+.button--glare:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(.19,1,.22,1);
+    width: 50px;
+    z-index: 1;
+}
+
+.button--primary:hover, .button--secondary {
+    background-color: #23bbbe;
+    color: #fefefe;
+}
+.button--glare:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(.19,1,.22,1);
+}
+
+.button, .close, .floating-image-block, .tile {
+    overflow: hidden;
+}
+// Radio button style
+.careers__dropdown {
+    background-color: #e34949;
+    border-radius: 3px;
+    float: left;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    // width: 100%;
+    margin-right: 20px;
+}
+.hero-search-form__dropdown {
+    border-radius: 0!important;
+}
+.careers__select {
+    background: 0 0;
+    color: #fff;
+    border: 0;
+    height: auto;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin: 0;
+    outline: 0;
+    padding: 23px 40px 20px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    width: 100%;
+    z-index: 2;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+}
+select {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.careers__dropdown:before {
+    background-color: #fff;
+    top: 20px;
+}
+.careers__dropdown:after {
+    background-color: #e34949;
+    top: 17px;
+}
+.careers__dropdown:after, .careers__dropdown:before {
+    content: '';
+    height: 14px;
+    position: absolute;
+    right: 30px;
+    transform: rotate(45deg);
+    width: 14px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end
